@@ -4,35 +4,115 @@
     <title>Chris Waugh</title>
     <style type="text/css">
       html, body {
-        background: #fff;
+        background: #000;
         font-family: 'helvetica neue', helvetica, arial, sans-serif;
-        margin: 0 auto;
-        padding: 0 20px;
-        max-width: 560px;
         font-weight: 100;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      main {
+        background: #fff;
+        text-align: left;
+      }
+      section {
+        margin: 0 auto;
+        padding: 20px 20px 0;
+        max-width: 560px;
+        line-height: 1.6em;
       }
       h1 {
         color: #000;
         font-size: 42px;
-        margin: 100px 0 0;
+        margin: 0;
         font-weight: 300;
       }
+      h2 {
+        font-weight: 300;
+        font-size: 22px;
+      }
       p {
-        margin: 0 0 0.25em 0.15em;
+        margin: 0 0 1em 0.15em;
       }
       a {
         color: #113F8C;
         text-decoration: none;
       }
+      #header {
+        position: relative;
+      }
+      #header h1 {
+        color: #fff;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        line-height: 100vh;
+        font-size: 64px;
+      }
+      #header, #header canvas {
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        margin: 0 auto;
+      }
+      header {
+        margin: 20px 0 20px;
+      }
+      header p {
+        margin: 0 0 0 0.15em;
+      }
+      a {
+        font-weight: 500;
+      }
+      footer {
+        font-size: 12px;
+        text-align: center;
+        margin: 40px 0 0;
+        padding: 0;
+      }
     </style>
     <link rel="canonical" href="http://www.chriswaugh.uk" />
     <meta name="description" content="Chris Waugh. Software Developer based in the North East England.">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5" />
   </head>
   <body>
-    <h1>Chris Waugh</h1>
-    <p>Software Developer</p>
-    <p>
-      <a href="https://uk.linkedin.com/in/cbwaugh" rel="me">LinkedIn</a>
-    </p>
+    <header id="header">
+      <h1>Chris Waugh</h1>
+      <canvas id="animation" width="1000" height="500"></canvas>
+    </header>
+    <main>
+      <section>
+        <h2>Hi. My name is Chris...</h2>
+        <p>...and I'm a Software Developer from the North East of England.</p>
+        <p>
+          I have over 8 years of professional experience developing websites, applications and games
+          for national and regional companies and charities, including:
+        </p>
+        <ul>
+          <li>RSPCA</li>
+          <li>Open University</li>
+          <li>Cruise Fashion</li>
+          <li>Grainger Games</li>
+          <li>Newcastle Falcons</li>
+        </ul>
+        <p>For more details please visit my <a href="https://uk.linkedin.com/in/cbwaugh" rel="me">LinkedIn</a>.</p>
+        <h2>Core skills:</h2>
+        <ul>
+          <li>Frontend development (HTML5, CSS3, Javascript, Typescript, Coffeescript)</li>
+          <li>Server side development (C#, Java, Coldfusion)</li>
+          <li>Game development (EaselJS, Actionscript 3)</li>
+          <li>Technical leadership</li>
+        </ul>
+        <h2>Get in touch</h2>
+        <p>
+          If you'd like to know more or discuss a project, please <a href="mailto:mail@chriswaugh.net">get in touch</a>.
+        </p>
+        <footer>
+          <p>Thanks for stopping by.</p>
+        </footer>
+      <section>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
